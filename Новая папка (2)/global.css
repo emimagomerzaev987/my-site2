@@ -1,0 +1,56 @@
+/* === global.css === */
+
+/* Было:
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Agbalumo:400|Itim:400|Marck+Script:400");
+@import url("https://px.animaapp.com/68723b01637921489cf68423.68723b02637921489cf68426.d9QNXiW.hcp.png");
+*/
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* Google Fonts с display=swap и кириллицей (где доступно) */
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Itim&family=Marck+Script&display=swap&subset=cyrillic");
+/* Счётчик Anima — можно удалить при желании */
+@import url("https://px.animaapp.com/68723b01637921489cf68423.68723b02637921489cf68426.d9QNXiW.hcp.png");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+input:focus {
+  outline: none;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.group-14 {
+  background-color: var(--alto);
+  background-image: url(./img/orig-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50px;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
